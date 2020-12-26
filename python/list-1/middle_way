@@ -1,0 +1,7 @@
+# middle_way
+# Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements.
+def middle_way(a, b):
+  new_list = []
+  new_list += [a[1]]
+  new_list += [b[1]]
+  return new_list
