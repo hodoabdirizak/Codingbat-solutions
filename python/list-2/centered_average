@@ -1,0 +1,10 @@
+# centered_average 
+# Return the "centered" average of an array of ints, which we'll say is the mean average of the values, except ignoring the largest and smallest values in the array.
+
+def centered_average(nums):
+  nums.remove(max(nums))
+  nums.remove(min(nums))
+  adder = 0
+  for num in nums:
+    adder += num
+  return adder / len(nums)
